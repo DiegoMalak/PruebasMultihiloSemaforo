@@ -1,16 +1,23 @@
-# PruebasMultiHiloSemaforo
+# *Pruebas de Multi-Hilos y Semáforos*
+## PruebaMultihiloSemaforo.
 
-Esta es una tarea de la asignatura PsP (Programación de Servicios y Procesos), en la que estamos aprendiendo y practicando el funcionamiento de los hilos.
+Este repositorio contiene una tarea realizada en la asignatura de Programación de Servicios y Procesos (PsP), en la que se estudia y se practica el funcionamiento de los hilos y semáforos en Java con IntelliJ.
 
-## Contenido:
+### Contenido.  
+Dentro del directorio `src` encontrarás tres paquetes:
 
-Dentro del directorio /src podemos encontrar tres paquetes:
-- HilosSemaforos
-- PabellonSemaforos
-- PuertasAcceso
-
-El paquete ***HilosSemaforos*** es el paquete de explicación en el que nos explicaron como funcionan los hilos.  
-El paquete ***PabellonSemaforos*** es el primer ejercicio que hicimos para poner en práctica lo explicado.  
-El paquete ***PuertasAcceso*** es otro ejercicio que hemos realizado, este tiene la carpeta 'res' en la que encontramos el .pdf con el enunciado del ejercicio. En este ejercicio he decidido indicar cuántas personas van a pasar por torno, y la mejor manera de hacerlo es mediante un monitor.
+- **HilosSemaforos**: En este paquete se encuentra la explicación teórica sobre el funcionamiento de los hilos y semáforos.  
+- **PabellonSemaforos**: En este paquete se encuentra el primer ejercicio práctico en el que se aplican los conocimientos adquiridos en el paquete anterior.  
+- **PuertasAcceso**: En este paquete se encuentra otro ejercicio práctico en el que se aplican los conocimientos adquiridos en el paquete anterior. Además, se encuentra una carpeta res en la que se encuentra el enunciado del ejercicio en formato PDF.  
 
 Todas las clases están comentadas para poder comprender su funcionamiento.
+
+### Requisitos.  
+- Java 8 o superior
+- IntelliJ
+
+### Ejecución
+1. Clonar este repositorio.
+2. Abrir el proyecto en IntelliJ.
+3. Ejecutar las clases correspondientes de cada paquete para ver en acción el funcionamiento de los hilos y semáforos.
+4. Revisar los comentarios en las clases para comprender el funcionamiento de cada una.
