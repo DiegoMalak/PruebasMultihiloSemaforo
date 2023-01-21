@@ -2,11 +2,16 @@ package PabellonSemaforos;
 
 import java.util.concurrent.Semaphore;
 
+// El pabellón tiene capacidad para 10 partidos, por lo que el semáforo tiene una capacidad de 10.
 public class MainPabellon {
 
     public static void main(String[] args) {
+        // Creación de un semáforo con una capacidad de 8, lo que significa que solo
+        // 8 partidos pueden jugar al mismo tiempo.
         Semaphore pabellon = new Semaphore(8);
 
+        // Creación de 10 hilos para representar cada uno de los partidos que se juegan
+        // en el pabellón.
         SemaforoPabellon partido1 = new SemaforoPabellon("1", pabellon);
         SemaforoPabellon partido2 = new SemaforoPabellon("2", pabellon);
         SemaforoPabellon partido3 = new SemaforoPabellon("3", pabellon);
@@ -18,6 +23,7 @@ public class MainPabellon {
         SemaforoPabellon partido9 = new SemaforoPabellon("9", pabellon);
         SemaforoPabellon partido10 = new SemaforoPabellon("10", pabellon);
 
+        // Inicio de los hilos.
         partido1.start();
         partido2.start();
         partido3.start();
@@ -28,6 +34,5 @@ public class MainPabellon {
         partido8.start();
         partido9.start();
         partido10.start();
-        
     }
 }
